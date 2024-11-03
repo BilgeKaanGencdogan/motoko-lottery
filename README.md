@@ -1,5 +1,5 @@
 # motoko-lottery
-Creating lottery project 
+Creating lottery project winner picked by modula operation. Random value returns a reminder according to wallet size that is winner's index.
 
 ```motoko
 import Buffer "mo:base/Buffer";
@@ -30,10 +30,6 @@ actor class Lottery() {
             return "Please specify a number greater than 0";
         };
 
-        if (numberOfWallets > 100) {
-            return "Maximum 100 wallets can be generated at once";
-        };
-
         let walletsBuffer = Buffer.Buffer<Text>(numberOfWallets);
 
         // Generate unique wallet addresses
@@ -54,11 +50,6 @@ actor class Lottery() {
         wallets
     };
 
-    // Get total number of wallets
-    public query func getWalletCount() : async Nat {
-        wallets.size()
-    };
-
     // Pick a random winner
     public func pickWinner() : async ?Text {
         if (wallets.size() == 0) {
@@ -76,3 +67,19 @@ actor class Lottery() {
     };
 };
 ```
+`Screen`;
+
+You enter how many wallets you are going to create here, then click 'call' button.
+![motoko-1](https://github.com/user-attachments/assets/cec4fa20-f8bd-4e7e-9dd3-d39389f94ebf)
+You can get wallets' addresses by pressing calling that function
+![motoko-2](https://github.com/user-attachments/assets/6115902a-f27f-480c-8b8f-9faa9176e04f)
+And finally, you can pick a winner by calling that function
+![motoko-4](https://github.com/user-attachments/assets/24a22f4c-6689-42b1-be2d-568c1554509a)
+
+`Output`;
+
+![motoko-output](https://github.com/user-attachments/assets/4e23b0d9-3c5b-4f7a-8868-d295471d4ff3)
+
+
+
+

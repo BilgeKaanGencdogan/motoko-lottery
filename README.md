@@ -71,8 +71,10 @@ actor class Lottery() {
 
 You enter how many wallets you are going to create here, then click 'call' button.
 ![motoko-1](https://github.com/user-attachments/assets/cec4fa20-f8bd-4e7e-9dd3-d39389f94ebf)
+
 You can get wallets' addresses by pressing calling that function
 ![motoko-2](https://github.com/user-attachments/assets/6115902a-f27f-480c-8b8f-9faa9176e04f)
+
 And finally, you can pick a winner by calling that function
 ![motoko-4](https://github.com/user-attachments/assets/24a22f4c-6689-42b1-be2d-568c1554509a)
 

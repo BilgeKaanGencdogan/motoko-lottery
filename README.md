@@ -1,5 +1,5 @@
 # motoko-lottery
-Creating lottery project winner picked by modula operation. Random value returns a reminder according to wallet size that is winner's index.
+Creating lottery project winner picked by modula operation. Random value returns a reminder according to wallet size, which is winner's index.
 
 ```motoko
 import Buffer "mo:base/Buffer";
